@@ -138,7 +138,7 @@ def smos_nc_shp_clip(folder_path,extent, extent_name,min_gridx, max_gridx, min_g
         
         
            
-os.chdir('E:\\Senitinel 1-2_SoilMoisture_FieldData-Updated\\_BrijMohanBohra\\SMOS\\filter_data\\filter_main_grid')
+os.chdir('E:\\Senitinel 1-2_SoilMoisture_FieldData-Updated\\_BrijMohanBohra\\SMOS\\filter_data\\filter_buffer_grid')
 folder_path = os.getcwd()
 extent = [( 75.671970,30.358505), ( 75.671970,31.412555), ( 76.761606,31.412555), ( 76.761606, 30.358505)]
 extent_name = "urna_extent"
@@ -147,8 +147,11 @@ max_gridx = 76.8
 min_gridy = 30.3
 max_gridy = 31.5
 pixel_width = 0.01
-save_folder = 'E:\\Senitinel 1-2_SoilMoisture_FieldData-Updated\\_BrijMohanBohra\\SMOS\\filter_data\\extract_csv'
 
+save_folder = 'E:\\Senitinel 1-2_SoilMoisture_FieldData-Updated\\_BrijMohanBohra\\SMOS\\filter_data\\extract_csv'
+buffer_grid_path = os.path.join(save_folder,'buffer_grid.csv')
+df = pd.read_csv(buffer_grid_path)
+df.head()
 for j in range(df.shape[0]):
     extract_lat = df.loc[j,'Y']
     extract_long = df.loc[j,'X']
@@ -157,6 +160,7 @@ for j in range(df.shape[0]):
     print(extract_lat, extract_long, grid_id, csv_file)
     smos_nc_shp_clip(folder_path, extent, extent_name, min_gridx, max_gridx, min_gridy, max_gridy, pixel_width, extract_lat, extract_long,save_folder,csv_file )
     
+         
          
 
 
