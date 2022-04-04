@@ -13,3 +13,7 @@ The output weightage of morphomatric parameter will be used in TOPSIS MCDM techn
 
 ## TOPSIS.py
 This file contains python script of TOPSIS (MCDM technique) to determine sub-watershed ranking based on susceptibility to soil erosion.
+
+## sensitivityAnalysis_soilMoisture.py
+This file contains fucntion to determine the coefficient of regression between soil moisture and backscatter coefficient with respect to different NDVI
+ranges and available crop
