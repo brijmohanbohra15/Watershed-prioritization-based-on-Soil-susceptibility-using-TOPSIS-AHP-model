@@ -8,7 +8,7 @@ file contains function for clipping the SMOS netcdf file and interpolate that fo
 This file contains function for estimating fresh snow depth using Co-polar difference method.
 
 ## AHP.py
-this file contains python script of Anlaytical Heirarchical Process ( MCDM technique ) for morphometric parameters of a waterhsed.
+this file contains python script of Anlaytical Heirarchical Process ( MCDM technique ) to determine weight of  morphometric parameters; susceptible to soil erosion.
 The output weightage of morphomatric parameter will be used in TOPSIS MCDM technique.
 
 ## TOPSIS.py
