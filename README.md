@@ -1,5 +1,5 @@
 
-This repository covers the codes on my case study on Watershed prioritization based on Soil susceptibility using TOPSIS AHP model.
+This repository covers the codes on my case study on Watershed prioritization based on Soil susceptibility using TOPSIS-AHP model.
 
 
 ## SMOS_anlaysis.py 
